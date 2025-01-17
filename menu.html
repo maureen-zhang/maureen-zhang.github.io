@@ -1,41 +1,40 @@
-
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu page with links to various sections like teaching, about me, and more.">
+  <title>Le Menu</title>
 
-<title>le menu</title>
+  <!-- Link to external CSS -->
+  <link href= "assets/stylesheet.css" rel="stylesheet">
 
-<link href="stylesheet.css" rel="stylesheet">
-
-<script type="text/javascript">
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-</script>
+  <!-- JavaScript function for showing and hiding layers -->
+  <script>
+    function toggleVisibility(elementId, action) {
+      const element = document.getElementById(elementId);
+      if (element && element.style) {
+        element.style.visibility = action === 'show' ? 'visible' : 'hidden';
+      }
+    }
+  </script>
 </head>
-
 <body>
-<div id="menu">
-<a href="about.html" target ="work">about me</a><br />
-<br>
-math:<br>
-
-<!-- <a href="pubs.html" target ="work">publications and other works</a><br>-->
-
-<a href="teaching.html" target ="work">teaching</a><br>
-
-<a href="misc.html" target ="work">other stuff</a>
-
-<br><br>
-
-<div id="layoutcred">
-  last updated 12/17/2024<br><br>
-	layout gratefully<br>
-  borrowed from <a href="https://plslala.com" target="_blank" rel="noopener noreferrer">L. Albert</a>
-	<br></div>
-
+  <!-- Menu Section -->
+  <div id="menu">
+    <a href="about.html" target="work" aria-label="Learn more about me">About Me</a><br><br>
+    Math:<br>
+    <a href="teaching/"target="work" aria-label="View teaching materials">Teaching</a><br>
+    <a href="misc.html" target="work" aria-label="View other miscellaneous items">Other Stuff</a><br><br>
+  </div>
+  
+  <!-- Layout Credit Section -->
+  <footer id="layoutcred">
+    <p>Last updated: 12/17/2024</p>
+    <p>
+      Layout gratefully borrowed from 
+      <a href="https://plslala.com" target="_blank" rel="noopener noreferrer">L. Albert</a>
+    </p>
+  </footer>
 </body>
 </html>
