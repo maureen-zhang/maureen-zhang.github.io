@@ -1,6 +1,6 @@
 body{
 	background-color:#FFFFff;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Helvetica', Arial, serif;
 	font-size: 17px;
 	line-height:18px;
 	letter-spacing: 1px;
@@ -19,12 +19,12 @@ font-size: 11px;
 a:link, a:focus {
 	color:#000000;
 	text-decoration:none;
-	background-color:#5b83b1;
+	background-color:#7aa5c2;
 }
 a:visited {
 	color:#000000;
 	text-decoration:none;
-	background-color:#5b83b1;
+	background-color:#7aa5c2;
 }
 a:hover {
 	color: #ffffff;
